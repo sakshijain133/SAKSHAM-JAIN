@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NeonButton|Saksham</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+      }
+      a{
+        position: relative;
+        display: inline-block;
+        color: #e71254;
+        padding: 15px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        overflow: hidden;
+        transition: 0.2s;
+      }
+      a:hover{
+        color: #fff;
+        background: #e71254;
+        box-shadow: 0 0 10px #e71254,
+                    0 0 40px #e71254,
+                    0 0 80px #e71254;
+        transition-delay: 1s;
+      }
+      a span{
+        position: absolute;
+        display: block;
+      }
+      a span:nth-child(1){
+        top: 0;
+        left: -100%;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, #e71254);
+      }
+      a:hover span:nth-child(1){
+        left: 100%;
+        transition: 1s;
+      }
+      a span:nth-child(3){
+        bottom: 0;
+        right: -100%;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(270deg, transparent, #e71254);
+      }
+      a:hover span:nth-child(3){
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+      }
+      a span:nth-child(2){
+        top: -100%;
+        right: 0;
+        height: 100%;
+        width: 2px;
+        background: linear-gradient(180deg, transparent, #e71254);
+      }
+      a:hover span:nth-child(2){
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+      }
+      a span:nth-child(4){
+        bottom: -100%;
+        left: 0;
+        height: 100%;
+        width: 2px;
+        background: linear-gradient(360deg, transparent, #e71254);
+      }
+      a:hover span:nth-child(4){
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Saksham Jain
+    </a>
+  </body>
+</html>
